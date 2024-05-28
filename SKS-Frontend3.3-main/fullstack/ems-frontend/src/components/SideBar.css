@@ -1,0 +1,193 @@
+:root {
+    --navbar-width: 256px;
+    --navbar-width-min: 80px;
+    --background: #d9dadc; 
+    --navbar-dark-primary: #18283b; 
+    --navbar-dark-secondary: #2c3e50; 
+    --navbar-light-primary: #f5f6fa; 
+    --navbar-light-secondary: #8392a5; 
+  }
+  
+  html, body {
+    margin: 0;
+    background: var(--background); 
+  }
+  
+  .sidebar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: var(--navbar-width-min);
+    background-color: var(--navbar-dark-primary);
+    transition: width 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    z-index: 1000;
+    border-right: 2px solid var(--navbar-dark-secondary);
+  }
+  
+  
+  .sidebar-container.open {
+    width: var(--navbar-width);
+  }
+  
+  .logo {
+    padding: 16px;
+    text-align: center;
+    color: var(--navbar-light-primary);
+  }
+  
+  .logo img {
+    width: 50px; /* İstenen genişlik */
+    height: auto; /* Otomatik yükseklik */
+}
+
+  
+  .sks-text {
+    font-size: 1.1rem; /* Yazı boyutu küçültüldü */
+    color: var(--navbar-light-secondary);
+  }
+  
+  .divider {
+    width: 100%;
+    height: 1px;
+    background-color: var(--navbar-dark-secondary);
+    margin: 10px 0;
+  }
+  
+  .date-time {
+    color: var(--navbar-light-primary);
+    text-align: center;
+    margin: 10px 0;
+    font-size: 0.8rem; /* Yazı boyutu küçültüldü */
+  }
+  
+  .sidebar-container.open .date-time {
+    font-size: 1.1 rem; /* Yazı boyutu büyültüldü */
+  }
+  
+  .nav {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  
+  .nav-button {
+    width: 100%;
+  }
+  
+  .nav-button a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 30px; /* İtem yüksekliği küçültüldü */
+    color: var(--navbar-light-primary);
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    padding: 0 20px; /* İtem iç boşluğu küçültüldü */
+    border-bottom: 1px solid var(--navbar-dark-secondary);
+  }
+  
+  .nav-button a:hover {
+    background-color: var(--navbar-dark-secondary);
+    color: var(--navbar-light-primary);
+  }
+  
+  .nav-button a .fa-icon {
+    font-size: 0.9rem; /* İkon boyutu küçültüldü */
+    margin-right: 20px; /* İkon ve metin arası boşluk küçültüldü */
+  }
+  
+  .sidebar-container:not(.open) .nav-button a {
+    justify-content: center;
+    padding: 0;
+  }
+  
+  .sidebar-container:not(.open) .nav-button a .fa-icon {
+    margin-right: 0;
+  }
+  
+  .sidebar-container:not(.open) .nav-button a span {
+    display: none;
+  }
+  
+  .sidebar-container.open .nav-button a span {
+    display: inline;
+  }
+  
+  .sidebar-title {
+    display: none;
+    padding: 16px;
+    color: var(--navbar-light-primary);
+    text-align: center;
+  }
+  
+  .sidebar-container.open .sidebar-title {
+    display: block;
+  }
+  
+  .container {
+    position: relative;
+  }
+  
+  .exit-button-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 0.5rem;
+    margin-bottom: auto;
+  }
+  
+  .exit-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 20px; /* Düğme iç boşluğu küçültüldü */
+    color: var(--navbar-light-primary);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .exit-button:hover {
+    background-color: var(--navbar-dark-secondary);
+    color: var(--navbar-light-primary);
+  }
+  
+  .exit-button .fa-icon {
+    font-size: 0.9rem; /* İkon boyutu küçültüldü */
+    margin-right: 20px; /* İkon ve metin arası boşluk küçültüldü */
+  }
+  
+  .sidebar-container:not(.open) .exit-button {
+    justify-content: center;
+    padding: 0;
+  }
+  
+  .sidebar-container:not(.open) .exit-button .fa-icon {
+    margin-right: 0;
+  }
+  
+  .sub-menu {
+    padding-left: 20px; 
+  }
+  
+  .sub-menu-item {
+    padding-left: 20px; 
+  }
+  

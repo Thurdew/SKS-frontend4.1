@@ -1,0 +1,14 @@
+#imageContainer{
+    width: 100vw; /* Ekranın genişliği kadar */
+    height: 100vh; /* Ekranın yüksekliği kadar */
+    background-image: url("src/assets/wall.jpeg"); /* Resmi arka plan olarak ekle */
+    background-size: cover; /* Resmi ekran boyutuna uyacak şekilde kapla */
+    background-position: center; /* Resmi ekranın ortasına hizala */
+  }
+  #imageContainer1{
+    width:100vw; /* Ekranın genişliği kadar */
+    height: 100vh; /* Ekranın yüksekliği kadar */
+    background-image: url("src/assets/login.jpg"); /* Resmi arka plan olarak ekle */
+    background-size: cover; /* Resmi ekran boyutuna uyacak şekilde kapla */
+    background-position: center; /* Resmi ekranın ortasına hizala */
+  }

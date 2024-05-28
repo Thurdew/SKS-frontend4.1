@@ -1,0 +1,96 @@
+/* ForwardComponent.css */
+
+/* Global styles */
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card {
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px; /* Form elemanları arasındaki boşluğu ayarlar */
+}
+
+.form-group label {
+    flex: 1;
+}
+
+.form-group select,
+.form-group input {
+    flex: 2;
+    margin-right: 10px;
+}
+
+.vehicle-inputs {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.vehicle-inputs input {
+    margin-right: 20px;
+}
+
+.vehicle-inputs button {
+    margin-left: 20px;
+}
+
+.vehicle-inputs .btn-success {
+    margin-top: 0;
+}
+
+
+/* Footer */
+.my-footer {
+    
+        background-color: #060606;
+        color: #fff;
+        padding: 2px 0;
+        text-align: center;
+        position:fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 1;
+        opacity: 0.6;
+      }
+
+
+.vehicle-inputs button {
+    margin-left: 10px;
+    background-color: #dc3545; /* Kırmızı arka plan */
+    color: white; /* Beyaz metin */
+    border: none; /* Kenarlık olmadan */
+    padding: 5px 10px; /* İç boşluk */
+    border-radius: 5px; /* Köşeleri yuvarla */
+    cursor: pointer; /* İmleç stilini değiştir */
+}
+
+.vehicle-inputs button:hover {
+    background-color: #c82333; /* Hareketli durumda koyu kırmızı */
+}

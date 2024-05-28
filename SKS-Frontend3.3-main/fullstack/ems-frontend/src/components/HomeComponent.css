@@ -1,0 +1,67 @@
+.home-container {
+  background-color: #f2f2f2; /* Arka plan rengi */
+  background-image: url("src/assets/barret.jpg"); /* Arka plan resmi */
+  background-size: cover; /* Resmi ekran boyutuna uyacak şekilde kapla */
+  background-position: center; /* Resmi ekranın ortasına hizala */
+  height: 100vh; /* Ekran yüksekliği kadar kaplasın */
+  width: 100vw; /* Ekran genişliği kadar kaplasın */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Kaydırmayı engelle */
+  margin: 0; /* Varsayılan marjı sıfırla */
+  padding: 0; /* Varsayılan dolguyu sıfırla */
+}
+
+.screen-image {
+  flex: 1; /* İçeriğin ekranın geri kalan kısmını kaplamasını sağlar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content1 {
+  text-align: center;
+  padding: 20px;
+  margin-top: -450px; /* Bu değeri gerekirse düzenleyin */
+}
+
+.currency-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.card1 {
+  background-color: rgba(255, 255, 255, 0.8); /* Kart arka plan rengi */
+  padding: 10px; /* İçerik içindeki dolgu miktarını azaltın */
+  border-radius: 10px;
+  width: 150px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif bir gölge ekleyin */
+}
+
+.card1 strong {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px; /* Başlık ve fiyat arasındaki boşluğu azaltın */
+  font-size: 1em; /* Başlık font boyutunu ayarlayın */
+}
+
+.card1 .rate {
+  font-size: 0.9em; /* Fiyat font boyutunu ayarlayın */
+}
+
+.daily-change {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.8em; /* Değişim oranı font boyutunu ayarlayın */
+}
+
+.positive-change {
+  color: green; /* Pozitif değişim için yeşil renk */
+}
+
+.negative-change {
+  color: red; /* Negatif değişim için kırmızı renk */
+}

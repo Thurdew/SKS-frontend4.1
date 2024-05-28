@@ -1,0 +1,10 @@
+.container1 {
+    margin-left: 220px; /* Yan menünün genişliği kadar ayarlandı */
+    max-width: 1000px;
+    padding: 20px;
+    margin-right: auto; /* Tablonun sağa çekilmesi */
+}
+
+.table {
+    width: 100%; /* Tablo genişliği */
+}
